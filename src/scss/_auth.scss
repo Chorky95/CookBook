@@ -1,0 +1,25 @@
+.auth {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding-top: 25vh;
+
+  .buttons {
+    width: 100vw;
+    display: block;
+    align-items: center;
+    margin-top: 80px;
+
+    .button {
+      display: block;
+      margin: auto;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+  }
+}

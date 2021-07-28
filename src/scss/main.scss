@@ -1,0 +1,93 @@
+@import 'intro';
+@import 'auth';
+@import 'login';
+@import 'register';
+@import 'home';
+@import 'add';
+@import 'view';
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+html {
+  background-color: #f5f3f1;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.title {
+  font-size: 4rem;
+  padding: 25px;
+}
+
+.subtitle {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.quote {
+  font-weight: normal;
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+}
+
+.button {
+  margin-top: 10vh;
+  background: #1c0f13;
+  border-radius: 15px;
+  width: 12vw;
+  height: 6vh;
+  min-width: 190px;
+  max-width: 200px;
+  min-height: 40px;
+  max-height: 50px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  span:after {
+    content: ' >>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 20px;
+    transition: 0.5s;
+  }
+
+  &:hover span {
+    padding-right: 25px;
+  }
+
+  &:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+/* Router transition */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}

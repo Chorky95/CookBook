@@ -1,0 +1,189 @@
+.add {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: visible;
+  text-align: center;
+
+  p {
+    margin-top: 2vh;
+  }
+
+  &__title {
+    margin-top: 10vh;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  &__subtitle {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+
+  .button {
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+  }
+
+  &__recipe {
+    &__form {
+      display: block;
+      label {
+        font-weight: 700;
+        line-height: 26px;
+        font-size: 1.2rem;
+      }
+      input {
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+        width: 15vw;
+        min-width: 300px;
+        max-width: 310px;
+        height: 8vh;
+        min-height: 50px;
+        max-height: 60px;
+        border: none;
+        border-radius: 15px;
+        background: #ffffff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 1.3rem;
+        text-align: center;
+      }
+
+      .shortDesc {
+        input {
+          width: 50vw;
+          min-width: 350px;
+          max-width: 500px;
+          height: 3vh;
+          min-height: 50px;
+          max-height: none;
+          overflow-y: scroll;
+        }
+      }
+
+      .prepTime {
+        input {
+          width: 5vw;
+          min-width: 70px;
+        }
+      }
+
+      .servings {
+        input {
+          width: 5vw;
+          min-width: 70px;
+        }
+      }
+
+      .ingredients {
+        width: 100vw;
+        &__form {
+          display: grid;
+          grid-template-columns: auto auto;
+          &__ingredient {
+            margin-left: 5vw;
+            input {
+              width: 60vw;
+              min-width: 60px;
+            }
+          }
+
+          &__amount {
+            margin-right: 5vw;
+
+            input {
+              width: 5vw;
+              min-width: 60px;
+            }
+          }
+        }
+      }
+
+      .ingredientButtons {
+        .ingredientButton {
+          min-width: 40px;
+          width: 40px;
+          font-size: 1.2rem;
+          margin-left: 2vw;
+          margin-right: 2vw;
+        }
+      }
+      .instructions {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2vh;
+
+        textarea {
+          margin: auto;
+          margin-top: 2vh;
+          margin-bottom: 2vh;
+          width: 40%;
+          min-width: 350px;
+          max-width: none;
+          height: 8vh;
+          min-height: 300px;
+          max-height: none;
+          overflow-y: scroll;
+          font-size: 1rem;
+
+          text-align: justify;
+          border: none;
+          border-radius: 15px;
+          background: #ffffff;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+      }
+
+      .image {
+        input {
+          width: 50vw;
+          max-width: 500px;
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .button {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .add {
+    &__recipe {
+      .ingredients {
+        &__form {
+          &__ingredient {
+            margin-left: 20vw;
+          }
+
+          &__amount {
+            margin-right: 20vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .add {
+    &__recipe {
+      .ingredients {
+        &__form {
+          &__ingredient {
+            margin-left: 30vw;
+          }
+
+          &__amount {
+            margin-right: 30vw;
+          }
+        }
+      }
+    }
+  }
+}

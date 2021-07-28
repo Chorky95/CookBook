@@ -60,6 +60,11 @@ html {
     display: inline-block;
     position: relative;
     transition: 0.5s;
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
   }
 
   span:after {

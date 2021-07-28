@@ -767,6 +767,11 @@ html {
   transition: 0.5s;
 }
 
+.button span svg {
+  width: 15px;
+  height: 15px;
+}
+
 .button span:after {
   content: ' >>';
   position: absolute;

@@ -30,7 +30,6 @@ function Home() {
   useEffect(() => {
     getData();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
-  console.log(data);
 
   return (
     <>
@@ -119,7 +118,9 @@ function Home() {
               );
             })
           ) : (
-            <h1>You currently don't have any saved recipes.</h1>
+            <h2 className='home__subtitle'>
+              You currently don't have any saved recipes.
+            </h2>
           )}
         </div>
       </div>
